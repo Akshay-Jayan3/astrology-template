@@ -1,0 +1,161 @@
+{
+  "site": {
+    "name": "Sri Astrology",
+    "phone": "919999999999",
+    "whatsapp": "919999999999",
+    "facebook": "https://m.me/sriastrology",
+    "location": "Kerala",
+    "languages": [
+      "Malayalam",
+      "English"
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "hero": {
+    "variant": "problem",
+    "headline": "Struggling with life decisions?",
+    "subtext": "Get clarity on marriage, career, finance, and health.",
+    "ctaText": "Chat on WhatsApp",
+    "secondaryText": "Call Now",
+    "spiritualImage": "/images/ettumarappan.jpg",
+    "trustNote": "Trusted by 5000+ people across Kerala"
+  },
+  "problems": [
+    {
+      "key": "marriage",
+      "title": "Delay in Marriage?",
+      "description": "Facing repeated delays or obstacles in finding the right partner?",
+      "prefill": "I am facing marriage delay issues",
+      "icon": "heart"
+    },
+    {
+      "key": "career",
+      "title": "Confused about Career?",
+      "description": "Unsure about job decisions, growth, or next steps in life?",
+      "prefill": "I need career guidance",
+      "icon": "briefcase"
+    },
+    {
+      "key": "finance",
+      "title": "Financial Problems?",
+      "description": "Struggling with money, debt, or instability in income?",
+      "prefill": "I have financial issues",
+      "icon": "coin"
+    },
+    {
+      "key": "health",
+      "title": "Health Concerns?",
+      "description": "Facing ongoing health issues or unexplained problems?",
+      "prefill": "I have health concerns",
+      "icon": "health"
+    }
+  ],
+  "trust": [
+    {
+      "label": "Years Experience",
+      "value": "12+",
+      "icon": "clock"
+    },
+    {
+      "label": "People Guided",
+      "value": "5000+",
+      "icon": "users"
+    },
+    {
+      "label": "Available",
+      "value": "9AM - 9PM",
+      "icon": "time"
+    },
+    {
+      "label": "Languages",
+      "value": "Malayalam, English",
+      "icon": "language"
+    }
+  ],
+  "about": {
+    "short": "With over 12 years of experience, I have guided thousands of people through life’s uncertainties using traditional Vedic astrology.",
+    "long": "My approach is rooted in authentic Kerala astrology practices passed down through my guru. I believe astrology is not just prediction, but guidance to help you move forward with clarity and confidence.",
+    "lineage": "Guided under traditional Guru Parampara",
+    "experience": "12+ Years Experience",
+    "clients": "5000+ People Guided",
+    "image": "/images/astrologer.jpg"
+  },
+  "services": [
+    {
+      "problemKey": "marriage",
+      "title": "Marriage Consultation",
+      "problem": "Facing delays or repeated obstacles in marriage?",
+      "solution": "Detailed horoscope analysis to identify planetary causes and suggest remedies.",
+      "prefill": "I need help with marriage issues"
+    },
+    {
+      "problemKey": "career",
+      "title": "Career Guidance",
+      "problem": "Confused about job change or career direction?",
+      "solution": "Astrological insights to guide your career decisions with clarity.",
+      "prefill": "I need career guidance"
+    }
+  ],
+  "testimonials": [
+    {
+      "type": "whatsapp",
+      "content": "Sir predicted my marriage timing correctly. Really grateful 🙏",
+      "name": "Anjali, Kochi"
+    },
+    {
+      "type": "text",
+      "content": "Got clarity in my career decisions after consultation.",
+      "name": "Rahul, Thrissur"
+    },
+    {
+      "type": "whatsapp",
+      "content": "Very accurate reading. Problems reduced after remedies.",
+      "name": "Sreelakshmi, Palakkad"
+    }
+  ],
+  "howItWorks": [
+    {
+      "title": "Contact",
+      "description": "Message on WhatsApp with your concern"
+    },
+    {
+      "title": "Share Details",
+      "description": "Provide birth details or problem context"
+    },
+    {
+      "title": "Consultation",
+      "description": "Get personalized guidance and insights"
+    },
+    {
+      "title": "Remedies",
+      "description": "Simple remedies to improve your situation"
+    }
+  ],
+  "cta": {
+    "primaryText": "Talk Now",
+    "secondaryText": "Call"
+  },
+  "theme": {
+    "primary": "#C2410C",
+    "primaryHover": "#9A3412",
+    "secondary": "#1F2937",
+    "textOnPrimary": "#FFFFFF",
+    "bgSoft": "#F9F6F1",
+    "borderSoft": "#E5E7EB"
+  }
+}
