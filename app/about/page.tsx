@@ -36,7 +36,6 @@ export default function AboutPage() {
               <h3 className="font-serif text-2xl font-semibold font-gray-900 mb-4">Get Guidance</h3>
               <div className="flex flex-col sm:flex-row gap-4">
                 <CTA type="whatsapp" phone={data.site.whatsapp} theme={data.theme} />
-                <CTA type="call" phone={data.site.phone} theme={data.theme} />
               </div>
             </div>
           </div>
