@@ -30,7 +30,7 @@ export default function CTA({ type, phone, url, message, label, theme }: Props) 
         rel="noopener noreferrer"
         className="px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 hover:opacity-90 inline-flex items-center gap-2"
       >
-        <span>💬</span> {label || 'Chat on WhatsApp'}
+        {label || 'Chat on WhatsApp'}
       </a>
     );
   }
@@ -44,7 +44,7 @@ export default function CTA({ type, phone, url, message, label, theme }: Props) 
       rel="noopener noreferrer"
       className="px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-700 inline-flex items-center gap-2 text-gray-700 bg-white"
     >
-      <span>📘</span> {label || 'Message on Facebook'}
+      {label || 'Message on Facebook'}
     </a>
   );
 }
