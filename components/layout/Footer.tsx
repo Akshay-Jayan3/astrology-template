@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MessageCircle, Mail } from "lucide-react";
 
 export default function Footer({ data }: any) {
   return (
@@ -13,7 +14,7 @@ export default function Footer({ data }: any) {
               {data.site.name}
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Providing clarity, peace, and direction through authentic astrological guidance for over a decade.
+              {data.site.subtitle || "Providing clarity, peace, and direction through authentic astrological guidance for over a decade."}
             </p>
           </div>
 
@@ -44,18 +45,26 @@ export default function Footer({ data }: any) {
                 href={`https://wa.me/${data.site.whatsapp}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 hover:text-green-400 transition-colors w-fit"
+                className="inline-flex items-center gap-3 hover:text-green-400 transition-colors w-fit group"
               >
-                <span>💬</span> WhatsApp
+                <MessageCircle className="w-5 h-5 text-gray-500 group-hover:text-green-400 transition-colors" /> WhatsApp
               </a>
               {data.site.facebook && (
                 <a 
                   href={data.site.facebook} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 hover:text-blue-400 transition-colors w-fit"
+                  className="inline-flex items-center gap-3 hover:text-blue-400 transition-colors w-fit group"
                 >
-                  <span>📘</span> Facebook Page
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-500 group-hover:text-blue-400 transition-colors"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg> Facebook Page
+                </a>
+              )}
+              {data.site.email && (
+                <a 
+                  href={`mailto:${data.site.email}`}
+                  className="inline-flex items-center gap-3 hover:text-orange-400 transition-colors w-fit group"
+                >
+                  <Mail className="w-5 h-5 text-gray-500 group-hover:text-orange-400 transition-colors" /> Email Us
                 </a>
               )}
             </div>

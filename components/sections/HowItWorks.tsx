@@ -5,10 +5,10 @@ export default function HowItWorks({ steps }: any) {
         {/* Heading */}
         <div className="text-center mb-20 max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
-            How It Works
+            The Path to Divine Insight
           </h2>
           <p className="text-gray-500 text-lg">
-            A simple, guided process to receive personalized astrological insights
+            A sacred journey to unlock your karmic destiny and receive Guruji's guidance.
           </p>
         </div>
 

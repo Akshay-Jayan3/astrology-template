@@ -25,7 +25,11 @@ export default function AboutPage() {
       <section className="py-16 px-6 sm:px-12 lg:px-24">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 space-y-6 text-gray-800 leading-relaxed text-lg">
-            <p>{data.about.long}</p>
+            <div className="space-y-4">
+              {data.about.long.split('\n\n').map((paragraph: string, idx: number) => (
+                <p key={idx}>{paragraph}</p>
+              ))}
+            </div>
             
             <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100 mt-8">
               <h3 className="font-serif text-2xl font-semibold text-gray-900 mb-4">Lineage & Tradition</h3>

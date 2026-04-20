@@ -1,4 +1,5 @@
 import CTA from "../ui/CTA";
+import { Heart, Briefcase, Coins, Leaf, Sparkles } from "lucide-react";
 
 export default function ProblemGrid({ problems, phone, theme }: any) {
   return (
@@ -7,10 +8,10 @@ export default function ProblemGrid({ problems, phone, theme }: any) {
         {/* Heading */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
-            What are you going through?
+            Identify Your Karmic Blockages
           </h2>
           <p className="text-gray-500 text-lg">
-            Choose your concern to receive tailored astrological guidance that addresses your specific life situation.
+            Select your deepest concern to receive divine Prashna and targeted Mantric pariharas.
           </p>
         </div>
 
@@ -23,12 +24,12 @@ export default function ProblemGrid({ problems, phone, theme }: any) {
             >
               <div className="flex-grow">
                 {/* Icon */}
-                <div className="w-14 h-14 bg-white shadow-sm text-2xl rounded-2xl flex items-center justify-center mb-6 text-orange-600 transition-transform group-hover:scale-110">
-                  {p.icon === 'heart' && "❤️"}
-                  {p.icon === 'briefcase' && "💼"}
-                  {p.icon === 'coin' && "💰"}
-                  {p.icon === 'health' && "🌿"}
-                  {!['heart', 'briefcase', 'coin', 'health'].includes(p.icon) && "✨"}
+                <div className="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center mb-6 text-orange-600 transition-transform group-hover:scale-110">
+                  {p.icon === 'heart' && <Heart className="w-7 h-7 stroke-[1.5]" />}
+                  {p.icon === 'briefcase' && <Briefcase className="w-7 h-7 stroke-[1.5]" />}
+                  {p.icon === 'coin' && <Coins className="w-7 h-7 stroke-[1.5]" />}
+                  {p.icon === 'health' && <Leaf className="w-7 h-7 stroke-[1.5]" />}
+                  {!['heart', 'briefcase', 'coin', 'health'].includes(p.icon) && <Sparkles className="w-7 h-7 stroke-[1.5]" />}
                 </div>
 
                 {/* Title */}
@@ -48,7 +49,7 @@ export default function ProblemGrid({ problems, phone, theme }: any) {
                   type="whatsapp"
                   phone={phone}
                   message={p.prefill}
-                  label="Seek Guidance →"
+                  label="Seek Blessings →"
                   theme={theme}
                 />
               </div>

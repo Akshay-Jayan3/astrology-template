@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Award, Users } from "lucide-react";
 
 export default function AboutPreview({ data }: any) {
   return (
@@ -38,6 +39,7 @@ export default function AboutPreview({ data }: any) {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight">
               A Legacy of Trust <br/> & Guidance
             </h2>
+            <p className="mt-4 text-2xl font-serif text-gray-800">{data.astrologer || "Sreekumar J Pillai"}</p>
           </div>
 
           <div className="w-16 h-1 bg-gradient-to-r from-orange-400 to-orange-200 rounded-full" />
@@ -46,18 +48,26 @@ export default function AboutPreview({ data }: any) {
             {data.short}
           </p>
 
-          <p className="text-gray-600 text-lg leading-relaxed font-light">
-            {data.long}
-          </p>
+          <div className="space-y-4">
+            {data.long.split('\n\n').map((paragraph: string, idx: number) => (
+              <p key={idx} className="text-gray-600 text-lg leading-relaxed font-light">
+                {paragraph}
+              </p>
+            ))}
+          </div>
 
           {/* Trust Highlights */}
           <div className="flex flex-wrap gap-4 pt-4 border-t border-gray-100">
             <div className="flex items-center gap-3 bg-orange-50 px-5 py-3 rounded-2xl border border-orange-100">
-              <span className="text-xl">🌟</span>
+              <span className="text-orange-600">
+                <Award className="w-6 h-6" />
+              </span>
               <span className="text-gray-900 font-medium">{data.experience}</span>
             </div>
             <div className="flex items-center gap-3 bg-[#F9F6F1] px-5 py-3 rounded-2xl border border-gray-200">
-              <span className="text-xl">👥</span>
+              <span className="text-gray-600">
+                <Users className="w-6 h-6" />
+              </span>
               <span className="text-gray-900 font-medium">{data.clients}</span>
             </div>
           </div>

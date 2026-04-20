@@ -5,10 +5,10 @@ export default function Testimonials({ items }: any) {
         {/* Heading */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
-            Words of Trust
+            Devotee Experiences
           </h2>
           <p className="text-gray-500 text-lg">
-            Real experiences from people who found clarity and direction through our guidance.
+            Real experiences from those whose lives were transformed by authentic guidance.
           </p>
         </div>
 

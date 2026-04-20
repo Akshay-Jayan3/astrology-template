@@ -33,8 +33,10 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-gray-100 text-center text-gray-600">
+          <div className="pt-8 border-t border-gray-100 text-center text-gray-600 space-y-3">
             <p className="mb-2"><strong>Location:</strong> {data.site.location}</p>
+            <p><strong>Mobile:</strong> +91 9567763538, 7510743538</p>
+            <p><strong>Email:</strong> {data.site.email}</p>
             <p><strong>Languages:</strong> {data.site.languages.join(", ")}</p>
           </div>
         </div>

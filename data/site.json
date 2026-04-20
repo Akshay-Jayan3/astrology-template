@@ -1,10 +1,13 @@
 {
   "site": {
-    "name": "Sri Astrology",
-    "phone": "919999999999",
-    "whatsapp": "919999999999",
-    "facebook": "https://m.me/sriastrology",
-    "location": "Kerala",
+    "name": "Sreesooktham",
+    "subtitle": "Heritage of Generations & Guardian of Aghora Divinity",
+    "astrologer": "Sreekumar J Pillai",
+    "phone": "919567763538",
+    "whatsapp": "917510743538",
+    "facebook": "https://www.facebook.com/search/top?q=ശ്രീ%20ജ്യോതിഷാലയം",
+    "email": "Sreesookthamastroresearch@gmail.com",
+    "location": "Kannimoola Thekkathil, Mathilil P O Kollam",
     "languages": [
       "Malayalam",
       "English"
@@ -28,39 +31,39 @@
   },
   "hero": {
     "variant": "problem",
-    "headline": "Struggling with life decisions?",
-    "subtext": "Get clarity on marriage, career, finance, and health.",
-    "ctaText": "Chat on WhatsApp",
-    "secondaryText": "Call Now",
-    "spiritualImage": "/images/ettumarappan.jpg",
-    "trustNote": "Trusted by 5000+ people across Kerala"
+    "headline": "Divine Clarity & Guidance with Sreesooktham",
+    "subtext": "Heritage of Generations & Guardian of Aghora Divinity",
+    "ctaText": "Contact Guruji via WhatsApp",
+    "secondaryText": "Call for Darshan",
+    "spiritualImage": "/images/ettumanurappan.webp",
+    "trustNote": "A Sacred Peetham for Astrological & Mantric Remedies"
   },
   "problems": [
     {
       "key": "marriage",
-      "title": "Delay in Marriage?",
-      "description": "Facing repeated delays or obstacles in finding the right partner?",
+      "title": "Karmic Blocks in Marriage?",
+      "description": "Facing Doshas or negative planetary influences causing repeated delays in finding your partner?",
       "prefill": "I am facing marriage delay issues",
       "icon": "heart"
     },
     {
       "key": "career",
-      "title": "Confused about Career?",
-      "description": "Unsure about job decisions, growth, or next steps in life?",
-      "prefill": "I need career guidance",
+      "title": "Obstacles in Career & Growth?",
+      "description": "Unsure about your life's path, struggling with career growth, or seeking clarity on your true calling?",
+      "prefill": "I seek guidance regarding my career",
       "icon": "briefcase"
     },
     {
       "key": "finance",
-      "title": "Financial Problems?",
-      "description": "Struggling with money, debt, or instability in income?",
+      "title": "Financial & Wealth Doshas?",
+      "description": "Struggling with debts or unexpected financial drains due to malefic planetary transits?",
       "prefill": "I have financial issues",
       "icon": "coin"
     },
     {
       "key": "health",
-      "title": "Health Concerns?",
-      "description": "Facing ongoing health issues or unexplained problems?",
+      "title": "Unexplained Health Hurdles?",
+      "description": "Facing recurring health concerns that require divine and astrological intervention?",
       "prefill": "I have health concerns",
       "icon": "health"
     }
@@ -88,12 +91,12 @@
     }
   ],
   "about": {
-    "short": "With over 12 years of experience, I have guided thousands of people through life’s uncertainties using traditional Vedic astrology.",
-    "long": "My approach is rooted in authentic Kerala astrology practices passed down through my guru. I believe astrology is not just prediction, but guidance to help you move forward with clarity and confidence.",
-    "lineage": "Guided under traditional Guru Parampara",
-    "experience": "12+ Years Experience",
-    "clients": "5000+ People Guided",
-    "image": "/images/astrologer.jpg"
+    "short": "Heritage of Generations & Guardian of Aghora Divinity. A professional platform for specialized astrological services by Sreekumar J Pillai.",
+    "long": "For me, Astrology is not merely a profession; it is a 'Sacred Flame' (Kedavilakku) bestowed upon me by my ancestors through rigorous spiritual practice (Upasana) and a timeless lineage.\n\nBeing born into a heritage profoundly versed in both Astrological Sciences and Mantric Wisdom is the cornerstone of my life's journey. Every insight I share is anchored in my unwavering devotion to Lord Ettumanoorappan and the formidable energy of the Aghora Divinity. Through decades of dedicated spiritual pursuit (Saparya) in the realm of Jyotishastra, I have moved beyond simple planetary analysis to deep life-transforming visions. I empower individuals to overcome complex life obstacles through a unique blend of traditional Mantric remedies and Shaivite spiritual practices. Just as the eternal lamp (Kedavilakku) of Ettumanoor dispels the darkness of every devotee, my mission is to illuminate a clear and righteous path for those who seek my guidance.\n\nWith over two decades of professional excellence in the media industry, I am uniquely equipped to present this ancient wisdom with absolute transparency, precision, and a modern perspective. 'Sreesooktham' is the sacred confluence where the trust of heritage, the sanctity of Shaivite divinity, and the profound strength of experience converge.",
+    "lineage": "Heritage of Generations",
+    "experience": "20+ Years Excellence in Media",
+    "clients": "Aghora Divinity Guidance",
+    "image": "/images/profile-pic.webp"
   },
   "services": [
     {
@@ -130,32 +133,32 @@
   ],
   "howItWorks": [
     {
-      "title": "Contact",
-      "description": "Message on WhatsApp with your concern"
+      "title": "Seek Blessings",
+      "description": "Message us softly on WhatsApp with your concern."
     },
     {
-      "title": "Share Details",
-      "description": "Provide birth details or problem context"
+      "title": "Share Birth Details",
+      "description": "Provide your Janma Nakshatra and birth time."
     },
     {
-      "title": "Consultation",
-      "description": "Get personalized guidance and insights"
+      "title": "Divine Prashna",
+      "description": "Receive deep astrological and mantric insights."
     },
     {
-      "title": "Remedies",
-      "description": "Simple remedies to improve your situation"
+      "title": "Sacred Pariharas",
+      "description": "Perform precise remedies and Pujas to remove Doshas."
     }
   ],
   "cta": {
-    "primaryText": "Talk Now",
+    "primaryText": "Seek Blessings",
     "secondaryText": "Call"
   },
   "theme": {
-    "primary": "#C2410C",
-    "primaryHover": "#9A3412",
-    "secondary": "#1F2937",
+    "primary": "#991B1B",
+    "primaryHover": "#7F1D1D",
+    "secondary": "#451A03",
     "textOnPrimary": "#FFFFFF",
-    "bgSoft": "#F9F6F1",
-    "borderSoft": "#E5E7EB"
+    "bgSoft": "#FEF3C7",
+    "borderSoft": "#FDE68A"
   }
 }

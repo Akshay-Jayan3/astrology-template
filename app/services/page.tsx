@@ -14,9 +14,9 @@ export default function ServicesPage() {
       {/* Header */}
       <section className="py-16 px-6 sm:px-12 lg:px-24 bg-white border-b border-gray-100">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">Astrology Validated Guidance</h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">Sacred Astrological Offerings & Pariharas</h1>
           <p className="text-xl text-gray-600">
-            Find clarity in moments of confusion. Choose the area of your life where you need the most urgent guidance.
+            Seek divine intervention and karmic remedies for your life's deepest doshas and obstacles.
           </p>
         </div>
       </section>
@@ -33,11 +33,11 @@ export default function ServicesPage() {
                 <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">{service.title}</h2>
                 <div className="space-y-4 mb-8">
                   <div>
-                    <h4 className="text-sm uppercase tracking-wider font-semibold text-red-600 mb-1">The Problem</h4>
+                    <h4 className="text-sm uppercase tracking-wider font-semibold text-red-600 mb-1">Karmic Obstacle</h4>
                     <p className="text-gray-700 text-lg">{service.problem}</p>
                   </div>
                   <div>
-                    <h4 className="text-sm uppercase tracking-wider font-semibold text-green-700 mb-1">The Solution</h4>
+                    <h4 className="text-sm uppercase tracking-wider font-semibold text-green-700 mb-1">Divine Remedy (Parihara)</h4>
                     <p className="text-gray-700 text-lg">{service.solution}</p>
                   </div>
                 </div>
@@ -47,7 +47,7 @@ export default function ServicesPage() {
                     phone={data.site.whatsapp} 
                     message={service.prefill} 
                     theme={data.theme} 
-                    label="Ask About This"
+                    label="Seek Divine Guidance"
                   />
                 </div>
               </div>

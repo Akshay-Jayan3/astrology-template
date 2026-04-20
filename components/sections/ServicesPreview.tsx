@@ -7,10 +7,10 @@ export default function ServicesPreview({ services, phone, theme }: any) {
         {/* Heading */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
-            How I Can Help You
+            Astrological Offerings & Pujas
           </h2>
           <p className="text-gray-500 text-lg">
-            Personalized guidance based on your situation
+            Divine remedies and Prashna tailored for your Karmic cycle
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export default function ServicesPreview({ services, phone, theme }: any) {
               <div className="space-y-6 flex-grow">
                 {/* Problem */}
                 <div className="relative pl-4 border-l-2 border-red-200">
-                  <h4 className="text-xs uppercase tracking-widest font-semibold text-red-600 mb-1">The Problem</h4>
+                  <h4 className="text-xs uppercase tracking-widest font-semibold text-red-600 mb-1">Karmic Obstacle</h4>
                   <p className="text-gray-700 leading-relaxed">
                     {s.problem}
                   </p>
@@ -37,7 +37,7 @@ export default function ServicesPreview({ services, phone, theme }: any) {
 
                 {/* Solution */}
                 <div className="relative pl-4 border-l-2 border-green-200">
-                  <h4 className="text-xs uppercase tracking-widest font-semibold text-green-700 mb-1">The Solution</h4>
+                  <h4 className="text-xs uppercase tracking-widest font-semibold text-green-700 mb-1">Divine Remedy (Parihara)</h4>
                   <p className="text-gray-700 leading-relaxed mb-6">
                     {s.solution}
                   </p>
@@ -50,7 +50,7 @@ export default function ServicesPreview({ services, phone, theme }: any) {
                   type="whatsapp"
                   phone={phone}
                   message={s.prefill}
-                  label="Get Help →"
+                  label="Seek Blessings →"
                   theme={theme}
                 />
               </div>

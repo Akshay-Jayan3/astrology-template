@@ -1,3 +1,5 @@
+import { Clock, Users, Calendar, Languages, Sparkles } from "lucide-react";
+
 export default function TrustStrip({ data }: any) {
   return (
     <section className="bg-gray-900 py-16 px-6 sm:px-12 lg:px-24">
@@ -9,12 +11,11 @@ export default function TrustStrip({ data }: any) {
               className="flex flex-col items-center text-center px-4"
             >
               <div className="w-14 h-14 bg-gray-800/50 rounded-2xl flex items-center justify-center mb-6 text-orange-400 group-hover:scale-110 transition-transform">
-                {/* Fallback icons to not rely on missing assets */}
-                {item.icon === 'clock' && "⏳"}
-                {item.icon === 'users' && "🫂"}
-                {item.icon === 'time' && "🕒"}
-                {item.icon === 'language' && "🗣️"}
-                {!['clock', 'users', 'time', 'language'].includes(item.icon) && "✨"}
+                {item.icon === 'clock' && <Clock className="w-7 h-7 stroke-[1.5]" />}
+                {item.icon === 'users' && <Users className="w-7 h-7 stroke-[1.5]" />}
+                {item.icon === 'time' && <Calendar className="w-7 h-7 stroke-[1.5]" />}
+                {item.icon === 'language' && <Languages className="w-7 h-7 stroke-[1.5]" />}
+                {!['clock', 'users', 'time', 'language'].includes(item.icon) && <Sparkles className="w-7 h-7 stroke-[1.5]" />}
               </div>
 
               <div className="text-3xl md:text-5xl font-serif font-bold text-white mb-2 tracking-tight">
