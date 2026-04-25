@@ -1,78 +1,148 @@
+"use client";
+
+import { useState } from "react";
 import data from "../../data/site.json";
 import Image from "next/image";
 import CTA from "../../components/ui/CTA";
 import StickyCTA from "../../components/sections/StickyCTA";
+import TrustStrip from "../../components/sections/TrustStrip";
 
-export const metadata = {
-  title: `About ${data.site.name} | Vedic Astrologer`,
-  description: data.about.short
-};
+const image = data.about.image; // common image for both languages
 
 export default function AboutPage() {
+  const [lang, setLang] = useState<"en" | "ml">("en");
+
+  const content = data.about[lang];
+
   return (
-    <main className="pb-24">
-      {/* Hero Section */}
-      <section className="bg-[#F9F6F1] py-16 px-6 sm:px-12 lg:px-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">About {data.site.name}</h1>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            {data.about.short}
+    <main>
+      {/* Premium Hero Section */}
+      <section className="relative py-24 px-6 sm:px-12 lg:px-24 overflow-hidden bg-[#FAF7F2]">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#FFF3D4] to-transparent rounded-full blur-3xl opacity-70 -z-10" />
+
+        <div className="max-w-5xl mx-auto text-center space-y-8">
+          <p className="text-[#c2410c] font-semibold tracking-[0.25em] uppercase text-sm">
+            About The Jyothishan
+          </p>
+
+          <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#1E1B16] leading-tight">
+            A Sacred Legacy of
+            <span className="block text-[#c2410c]">
+              Trust & Divine Guidance
+            </span>
+          </h1>
+
+          <p className="text-lg md:text-xl text-[#4A443D] max-w-3xl mx-auto leading-relaxed">
+            {content.short}
           </p>
         </div>
       </section>
 
-      {/* Content Section */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1 space-y-6 text-gray-800 leading-relaxed text-lg">
-            <div className="space-y-4">
-              {data.about.long.split('\n\n').map((paragraph: string, idx: number) => (
-                <p key={idx}>{paragraph}</p>
-              ))}
+      {/* Main Content */}
+      <section className="px-6 sm:px-12 lg:px-24 py-20 bg-white">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+          {/* Left Content */}
+          <div className="space-y-8">
+            <div>
+              <p className="text-[#c2410c] font-medium uppercase tracking-wider text-sm mb-3">
+                Spiritual Journey
+              </p>
+
+              <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#1E1B16] leading-tight">
+                {data.site.name}
+              </h2>
             </div>
-            
-            <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100 mt-8">
-              <h3 className="font-serif text-2xl font-semibold text-gray-900 mb-4">Lineage & Tradition</h3>
-              <p className="text-gray-700">{data.about.lineage}</p>
+
+            {/* Language Toggle */}
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => setLang("en")}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${lang === "en"
+                  ? "bg-[#c2410c] text-white shadow-md"
+                  : "bg-[#FAF7F2] text-[#5F5A52] border border-[#F1E3BF]"
+                  }`}
+              >
+                English
+              </button>
+
+              <button
+                onClick={() => setLang("ml")}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${lang === "ml"
+                  ? "bg-[#c2410c] text-white shadow-md"
+                  : "bg-[#FAF7F2] text-[#5F5A52] border border-[#F1E3BF]"
+                  }`}
+              >
+                മലയാളം
+              </button>
             </div>
-            
-            <div className="pt-6">
-              <h3 className="font-serif text-2xl font-semibold font-gray-900 mb-4">Get Guidance</h3>
+
+            <div className="w-20 h-[2px] bg-gradient-to-r from-[#D4AF37] to-transparent rounded-full" />
+
+            {/* Dynamic Content */}
+            <div className="space-y-5 text-[#5F5A52] text-lg leading-relaxed">
+              {content.long
+                .split("\n\n")
+                .map((paragraph: string, idx: number) => (
+                  <p key={idx}>{paragraph}</p>
+                ))}
+            </div>
+
+            {/* Lineage Card */}
+            <div className="bg-[#FAF7F2] border border-[#F1E3BF] rounded-3xl p-8 shadow-sm">
+              <h3 className="text-xl font-serif font-semibold text-[#1E1B16] mb-4">
+                {lang === "en" ? "Lineage & Tradition" : "പാരമ്പര്യവും വിശ്വാസവും"}
+              </h3>
+
+              <p className="text-[#5F5A52] leading-relaxed">
+                {content.lineage}
+              </p>
+            </div>
+
+            {/* CTA */}
+            <div className="pt-4">
+              <h3 className="text-2xl font-serif font-semibold text-[#1E1B16] mb-5">
+                Seek Personal Guidance
+              </h3>
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <CTA type="whatsapp" phone={data.site.whatsapp} theme={data.theme} />
+                <CTA
+                  type="whatsapp"
+                  phone={data.site.whatsapp}
+                  label="Consult on WhatsApp"
+                  theme={data.theme}
+                />
               </div>
             </div>
           </div>
-          
-          <div className="order-1 md:order-2 relative aspect-square md:aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-            {/* Fallback image if data.about.image is missing or causes 404. We'll use next/image with a placeholder or fallback. To be reliable here, a simple div fallback if not provided or just rendering it. Assuming image exists based on json. */}
-            <div className="absolute inset-0 bg-gray-200 animate-pulse"></div>
-            <Image 
-              src={data.about.image || "/images/astrologer.jpg"} 
-              alt={data.site.name}
-              fill
-              className="object-cover relative z-10"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+
+          {/* Right Sticky Image (Common) */}
+          <div className="lg:sticky lg:top-24">
+            <div className="relative group flex justify-center">
+              <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-[#D4AF37]/20 to-transparent blur-xl opacity-80" />
+
+              <div className="relative h-[450px] w-full max-w-md rounded-[2rem] overflow-hidden border border-white bg-white shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+                <Image
+                  src={image}
+                  alt={data.site.name}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Stats/Trust */}
-      <section className="bg-gray-900 text-white py-16 px-6 sm:px-12 lg:px-24">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {data.trust.map((item, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="text-3xl md:text-4xl font-serif font-bold mb-2" style={{ color: data.theme.primary }}>
-                {item.value}
-              </div>
-              <div className="text-gray-300 text-sm md:text-base uppercase tracking-wider">{item.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-      
-      <StickyCTA phone={data.site.whatsapp} theme={data.theme} />
+      <TrustStrip data={data.trust} />
+
+      <StickyCTA
+        phone={data.site.whatsapp}
+        theme={data.theme}
+      />
     </main>
   );
 }

@@ -50,7 +50,7 @@ export default function ServicesPreview({ services, phone, theme }: any) {
                   type="whatsapp"
                   phone={phone}
                   message={s.prefill}
-                  label="Seek Blessings →"
+                  label="Seek Blessings"
                   theme={theme}
                 />
               </div>

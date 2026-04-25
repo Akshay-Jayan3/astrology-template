@@ -42,17 +42,6 @@ export default function ProblemGrid({ problems, phone, theme }: any) {
                   {p.description}
                 </p>
               </div>
-
-              {/* CTA placed at bottom */}
-              <div className="mt-auto">
-                <CTA
-                  type="whatsapp"
-                  phone={phone}
-                  message={p.prefill}
-                  label="Seek Blessings →"
-                  theme={theme}
-                />
-              </div>
             </div>
           ))}
         </div>

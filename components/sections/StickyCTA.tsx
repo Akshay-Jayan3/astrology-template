@@ -9,10 +9,10 @@ export default function StickyCTA({ phone, theme }: any) {
           <span className="text-sm font-bold text-gray-900">Get Instant Guidance</span>
         </div>
         <div className="flex-shrink-0">
-          <CTA 
-            type="whatsapp" 
-            phone={phone} 
-            label="Chat Now" 
+          <CTA
+            type="whatsapp"
+            phone={phone}
+            label="Chat Now"
             theme={theme}
           />
         </div>

@@ -31,12 +31,15 @@
   },
   "hero": {
     "variant": "problem",
-    "headline": "Divine Clarity & Guidance with Sreesooktham",
-    "subtext": "Heritage of Generations & Guardian of Aghora Divinity",
-    "ctaText": "Contact via WhatsApp",
+    "headline": "Trusted Vedic Guidance for Life Decisions",
+    "subtext": "Rooted in Generations of Spiritual Tradition, Offering Personal Guidance, Remedies & Divine Clarity for Marriage, Career, Health & Peace of Mind",
+    "ctaText": "Consult on WhatsApp",
     "secondaryText": "Call for Darshan",
-    "spiritualImage": "/images/ettumanurappan.webp",
-    "trustNote": "A Sacred Peetham for Astrological & Mantric Remedies"
+    "spiritualImages": [
+      "/images/ettumanurappan.webp",
+      "/images/solar-system.webp"
+    ],
+    "trustNote": "Traditional Vedic Astrology • Kerala Jyothisham • Spiritual Remedies"
   },
   "problems": [
     {
@@ -91,11 +94,20 @@
     }
   ],
   "about": {
-    "short": "Heritage of Generations & Guardian of Aghora Divinity. A professional platform for specialized astrological services by Sreekumar J Pillai.",
-    "long": "For me, Astrology is not merely a profession; it is a 'Sacred Flame' (Kedavilakku) bestowed upon me by my ancestors through rigorous spiritual practice (Upasana) and a timeless lineage.\n\nBeing born into a heritage profoundly versed in both Astrological Sciences and Mantric Wisdom is the cornerstone of my life's journey. Every insight I share is anchored in my unwavering devotion to Lord Ettumanoorappan and the formidable energy of the Aghora Divinity. Through decades of dedicated spiritual pursuit (Saparya) in the realm of Jyotishastra, I have moved beyond simple planetary analysis to deep life-transforming visions. I empower individuals to overcome complex life obstacles through a unique blend of traditional Mantric remedies and Shaivite spiritual practices. Just as the eternal lamp (Kedavilakku) of Ettumanoor dispels the darkness of every devotee, my mission is to illuminate a clear and righteous path for those who seek my guidance.\n\nWith over two decades of professional excellence in the media industry, I am uniquely equipped to present this ancient wisdom with absolute transparency, precision, and a modern perspective. 'Sreesooktham' is the sacred confluence where the trust of heritage, the sanctity of Shaivite divinity, and the profound strength of experience converge.",
-    "lineage": "Heritage of Generations",
-    "experience": "20+ Years Excellence in Media",
-    "clients": "Aghora Divinity Guidance",
+    "en": {
+      "short": "Heritage of Generations & Guardian of Aghora Divinity. A sacred platform for trusted Vedic astrology, mantric remedies, and spiritual guidance by Sreekumar J Pillai.",
+      "long": "For me, Astrology is not merely a profession; it is a 'Sacred Flame' (Kedavilakku) bestowed upon me by my ancestors through rigorous spiritual practice (Upasana) and a timeless lineage.\n\nBeing born into a heritage profoundly versed in both Astrological Sciences and Mantric Wisdom is the cornerstone of my life's journey. Every insight I share is anchored in my unwavering devotion to Lord Ettumanoorappan and the formidable energy of the Aghora Divinity.\n\nThrough decades of dedicated spiritual pursuit (Saparya) in the realm of Jyotishastra, I have moved beyond simple planetary analysis to deep life-transforming visions. I empower individuals to overcome complex life obstacles through a unique blend of traditional Mantric remedies and Shaivite spiritual practices. Just as the eternal lamp (Kedavilakku) of Ettumanoor dispels the darkness of every devotee, my mission is to illuminate a clear and righteous path for those who seek my guidance.\n\nWith over two decades of professional excellence in the media industry, I am uniquely equipped to present this ancient wisdom with absolute transparency, precision, and a modern perspective. 'Sreesooktham' is the sacred confluence where the trust of heritage, the sanctity of Shaivite divinity, and the profound strength of experience converge.",
+      "lineage": "Heritage of Generations & Guardian of Aghora Divinity",
+      "experience": "20+ Years of Professional Excellence",
+      "clients": "Spiritual Guidance Rooted in Aghora Divinity"
+    },
+    "ml": {
+      "short": "തലമുറകളുടെ കൈപുണ്യവും അഘോര ചൈതന്യത്തിന്റെ കാവലും. ശ്രീകുമാർ ജെ പിള്ളയുടെ വിശ്വസ്തമായ വേദ ജ്യോതിഷവും മന്ത്രപരിഹാരങ്ങളും ആത്മീയ മാർഗ്ഗനിർദ്ദേശവും നൽകുന്ന പുണ്യവേദിയാണ് ശ്രീസൂക്തം.",
+      "long": "ജ്യോതിഷം എനിക്ക് കേവലം ഒരു തൊഴിലല്ല; മറിച്ച് എന്റെ പൂർവ്വികർ ഉപാസനയിലൂടെയും നിഗൂഢമായ പാരമ്പര്യത്തിലൂടെയും എനിക്ക് കൈമാറിത്തന്ന പുണ്യമായ ഒരു കെടാവിളക്കാണ്.\n\nജ്യോതിഷ ശാസ്ത്രത്തിലും മന്ത്രോപാസനയിലും ഒരുപോലെ പാണ്ഡിത്യമുണ്ടായിരുന്ന ഒരു പൈതൃകത്തിന്റെ പിൻമുറക്കാരനായി ജനിക്കാൻ കഴിഞ്ഞതാണ് എന്റെ ജീവിതത്തിലെ ഏറ്റവും വലിയ അനുഗ്രഹം. ഏറ്റുമാനൂരപ്പന്റെ അചഞ്ചലമായ ഭക്തിയും ആ അഘോര ചൈതന്യവുമാണ് എന്റെ ഓരോ പ്രവചനത്തിന്റെയും ആത്മീയ കരുത്ത്.\n\nപതിറ്റാണ്ടുകൾ നീണ്ട ജ്യോതിഷ സപര്യയിലൂടെ ആർജ്ജിച്ചെടുത്ത അറിവ്, കേവലം ഗ്രഹനിലകൾ വിശകലനം ചെയ്യുന്നതിനപ്പുറം ജീവിതത്തെ ആഴത്തിൽ ദർശിക്കാൻ എന്നെ സഹായിക്കുന്നു. ജാതകത്തിലെ സങ്കീർണ്ണമായ തടസ്സങ്ങളെ പാരമ്പര്യമായി ലഭിച്ച മന്ത്രവിധികളിലൂടെയും ശൈവ ഉപാസനയിലൂടെയും അതിജീവിക്കാൻ ഞാൻ ഭക്തരെ പ്രാപ്തരാക്കുന്നു. ഏറ്റുമാനൂരിലെ വലിയവിളക്ക് (കെടാവിളക്ക്) ഓരോ ഭക്തന്റെയും ജീവിതത്തിലെ അന്ധകാരം നീക്കുന്നതുപോലെ, തെളിഞ്ഞ ഒരു പാത ഓരോ വ്യക്തിക്കും കാട്ടിക്കൊടുക്കുക എന്നതാണ് എന്റെ ആത്മീയ ദൗത്യം.\n\nമാധ്യമ രംഗത്തെ രണ്ടു പതിറ്റാണ്ടിലധികം നീണ്ട പ്രൊഫഷണൽ മികവ്, പൗരാണികമായ ഈ വിദ്യയെ ഇന്നത്തെ കാലഘട്ടത്തിന് അനുയോജ്യമായ രീതിയിൽ തികച്ചും സുതാര്യമായും കൃത്യമായും അവതരിപ്പിക്കാൻ എന്നെ സഹായിക്കുന്നു. പാരമ്പര്യത്തിന്റെ വിശ്വസ്തതയും ശൈവ ചൈതന്യത്തിന്റെ പവിത്രതയും അനുഭവസമ്പത്തിന്റെ കരുത്തും ഒത്തുചേരുന്ന പുണ്യസ്ഥാനമാണ് 'ശ്രീസൂക്തം'.",
+      "lineage": "തലമുറകളുടെ കൈപുണ്യവും അഘോര ചൈതന്യത്തിന്റെ കാവലും",
+      "experience": "20+ വർഷത്തെ പ്രൊഫഷണൽ മികവ്",
+      "clients": "അഘോര ചൈതന്യത്തിൽ അധിഷ്ഠിതമായ ആത്മീയ മാർഗ്ഗനിർദ്ദേശം"
+    },
     "image": "/images/profile-pic.webp"
   },
   "services": [
@@ -154,7 +166,7 @@
     "secondaryText": "Call"
   },
   "theme": {
-    "primary": "#991B1B",
+    "primary": "#c2410c",
     "primaryHover": "#7F1D1D",
     "secondary": "#451A03",
     "textOnPrimary": "#FFFFFF",

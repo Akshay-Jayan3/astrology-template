@@ -23,8 +23,8 @@ export default function Navbar({ data }: any) {
     return (
         <>
             {/* HEADER */}
-            <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl border-b border-gray-100">
-                <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 h-20 flex items-center justify-between">
+            <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl border-b shadow-lg border-gray-100">
+                <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 h-16 flex items-center justify-between">
 
                     {/* Brand */}
                     <Link
@@ -48,10 +48,10 @@ export default function Navbar({ data }: any) {
                         ))}
 
                         <Link
-                            href="/blog"
+                            href="/articles"
                             className="hover:text-orange-700 transition-colors relative"
                         >
-                            Blog
+                            Articles
                             <span className="absolute -top-3 -right-4 bg-orange-100 text-orange-700 text-[10px] px-1.5 py-0.5 rounded-full font-bold">
                                 NEW
                             </span>
@@ -96,8 +96,8 @@ export default function Navbar({ data }: any) {
             {/* FULL SCREEN MOBILE MENU */}
             <div
                 className={`fixed inset-0 z-40 md:hidden transition-all duration-500 ${isMobileMenuOpen
-                        ? "opacity-100 pointer-events-auto"
-                        : "opacity-0 pointer-events-none"
+                    ? "opacity-100 pointer-events-auto"
+                    : "opacity-0 pointer-events-none"
                     }`}
             >
                 {/* Background */}
