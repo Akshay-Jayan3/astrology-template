@@ -1,115 +1,90 @@
-"use client";
-
 import Image from "next/image";
 import CTA from "../ui/CTA";
-import { useEffect, useState } from "react";
+import { Sparkles } from "lucide-react";
 
 export default function Hero({ data, phone, theme }: any) {
-  const slides = data.spiritualImages || [];
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    if (!slides.length) return;
-
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 7000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
   return (
-    <section className="relative min-h-[92vh] w-full overflow-hidden">
-      {/* Background Slider */}
-      <div className="absolute inset-0">
-        {slides.map((img: string, index: number) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${currentSlide === index ? "opacity-100" : "opacity-0"
-              }`}
-          >
-            <Image
-              src={img}
-              alt={`Hero ${index + 1}`}
-              fill
-              priority={index === 0}
-              sizes="100vw"
-              className="object-cover"
+    <section className="relative overflow-hidden min-h-[90vh] flex items-center bg-[#F9F6F1]">
+
+
+      {/* Background gradient blobs */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-orange-100/40 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/4" />
+        <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-yellow-50/50 rounded-full blur-[100px] -translate-x-1/4 translate-y-1/4" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 py-16 grid lg:grid-cols-2 gap-16 items-center w-full">
+
+        {/* LEFT CONTENT */}
+        <div className="space-y-8 relative z-10">
+          {/* Trust Note */}
+          <div className="inline-block px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-orange-200 shadow-sm text-orange-800 text-sm font-medium tracking-wide">
+            {data.trustNote || "Trusted by thousands globally"}
+          </div>
+
+          {/* Heading */}
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-gray-900 leading-[1.1] tracking-tight">
+            {data.headline.split(" ").map((word: string, i: number) => (
+              <span
+                key={i}
+                className={i % 3 === 2 ? "text-orange-700" : ""}
+              >
+                {word}{" "}
+              </span>
+            ))}
+          </h1>
+
+          {/* Subtext */}
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 font-light leading-relaxed max-w-xl">
+            {data.subtext}
+          </p>
+
+          {/* CTA */}
+          <div className="flex flex-col sm:flex-row gap-5 items-start sm:items-center pt-4">
+            <CTA
+              type="whatsapp"
+              phone={phone}
+              label={data.ctaText}
+              theme={theme}
             />
           </div>
-        ))}
-      </div>
+        </div>
 
-      {/* Better Overlay */}
-      <div className="absolute inset-0 bg-black/65 z-10" />
+        {/* RIGHT VISUAL */}
+        <div className="relative lg:h-[600px] flex justify-center items-center">
 
-      {/* Content */}
-      <div className="relative z-20 flex items-center min-h-[92vh]">
-        <div className="w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-24 pt-24 pb-16">
-          <div className="max-w-2xl space-y-6">
-            {/* Trust Badge - fixed for mobile */}
-            <div className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-[#D4AF37]/40 bg-black/30 px-4 py-3 backdrop-blur-md">
-              <span className="h-2 w-2 rounded-full bg-[#D4AF37]" />
+          {/* Image Card */}
+          <div className="relative w-full max-w-md aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white transform hover:scale-[1.02] transition-transform duration-700 ease-out z-10">
 
-              <p className="text-xs sm:text-sm leading-relaxed font-medium">
-                <span className="text-[#D4AF37] font-semibold">
-                  Traditional Vedic Astrology
-                </span>
+            {/* Fallback Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-orange-200 to-amber-100 mix-blend-multiply" />
 
-                <span className="text-white/70 px-1">•</span>
+            {/* Image */}
+            <Image
+              src={data.spiritualImage || "/images/astrologer.jpg"}
+              alt="Guidance"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
 
-                <span className="text-white">
-                  Kerala Jyothisham
-                </span>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-gray-900/10 to-transparent" />
 
-                <span className="text-white/70 px-1">•</span>
-
-                <span className="text-[#D4AF37] font-semibold">
-                  Spiritual Remedies
-                </span>
+            {/* Quote */}
+            <div className="absolute bottom-6 sm:bottom-8 left-4 sm:left-8 right-4 sm:right-8 z-20">
+              <p className="text-white font-serif text-base sm:text-lg font-medium leading-snug drop-shadow-md">
+                "Astrology is not merely a profession; it is a Sacred Flame bestowed upon me."
               </p>
             </div>
+          </div>
 
-            {/* Heading - fixed mobile size */}
-            <h1 className="text-[2.2rem] sm:text-5xl lg:text-6xl font-serif font-bold leading-[1.08] tracking-tight text-white">
-              Trusted Vedic Guidance
-              <span className="block">
-                for Life Decisions
-              </span>
-            </h1>
-
-            {/* Subtext */}
-            <p className="text-base sm:text-lg text-white/80 leading-relaxed max-w-xl">
-              {data.subtext}
-            </p>
-
-            {/* CTA */}
-            <div className="pt-2">
-              <div className="w-full sm:w-auto">
-                <CTA
-                  type="whatsapp"
-                  phone={phone}
-                  label={data.ctaText || "Consult on WhatsApp"}
-                  theme={theme}
-                />
-              </div>
-            </div>
+          {/* Decorative Icon */}
+          <div className="hidden lg:flex absolute top-1/2 -left-12 w-24 h-24 bg-white rounded-full shadow-xl items-center justify-center p-6 z-20 animate-[bounce_5s_infinite]">
+            <Sparkles className="w-10 h-10 text-orange-400 stroke-[1.5]" />
           </div>
         </div>
-      </div>
-
-      {/* Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
-        {slides.map((_: string, index: number) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`rounded-full transition-all duration-300 ${currentSlide === index
-                ? "w-8 h-2 bg-white"
-                : "w-2 h-2 bg-white/50"
-              }`}
-          />
-        ))}
       </div>
     </section>
   );

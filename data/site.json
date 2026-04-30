@@ -31,15 +31,12 @@
   },
   "hero": {
     "variant": "problem",
-    "headline": "Trusted Vedic Guidance for Life Decisions",
-    "subtext": "Rooted in Generations of Spiritual Tradition, Offering Personal Guidance, Remedies & Divine Clarity for Marriage, Career, Health & Peace of Mind",
-    "ctaText": "Consult on WhatsApp",
+    "headline": "Divine Clarity & Guidance with Sreesooktham",
+    "subtext": "Heritage of Generations • Guardian of Aghora Divinity • Trusted Spiritual Guidance for Life’s Challenges",
+    "ctaText": "Contact via WhatsApp",
     "secondaryText": "Call for Darshan",
-    "spiritualImages": [
-      "/images/ettumanurappan-2.webp",
-      "/images/solar-system.webp"
-    ],
-    "trustNote": "Traditional Vedic Astrology • Kerala Jyothisham • Spiritual Remedies"
+    "trustNote": "A Sacred Peetham for Astrological, Mantric & Spiritual Remedies",
+    "spiritualImage": "/images/ettumanurappan.webp"
   },
   "problems": [
     {
