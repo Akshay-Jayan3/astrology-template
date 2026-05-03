@@ -22,10 +22,6 @@
       {
         "label": "Services",
         "href": "/services"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact"
       }
     ]
   },
@@ -109,18 +105,88 @@
   },
   "services": [
     {
-      "problemKey": "marriage",
-      "title": "Marriage Consultation",
-      "problem": "Facing delays or repeated obstacles in marriage?",
-      "solution": "Detailed horoscope analysis to identify planetary causes and suggest remedies.",
-      "prefill": "I need help with marriage issues"
+      "problemKey": "horoscope",
+      "title": "Horoscope Analysis",
+      "problem": "Experiencing confusion about different phases of your life?",
+      "solution": "Analysis of planetary positions based on your birth time and place to provide clear guidance on life stages.",
+      "details": [
+        "Deep insights into personality, health, and lifespan",
+        "Understanding major life phases through planetary periods",
+        "Identification of critical transition periods in life",
+        "Guidance on precautions during sensitive phases"
+      ],
+      "bestFor": "Understanding life patterns and upcoming phases",
+      "prefill": "I need horoscope analysis"
     },
     {
       "problemKey": "career",
-      "title": "Career Guidance",
-      "problem": "Confused about job change or career direction?",
-      "solution": "Astrological insights to guide your career decisions with clarity.",
+      "title": "Career & Financial Guidance",
+      "problem": "Facing uncertainty in career growth or financial stability?",
+      "solution": "Guidance on career progress, business opportunities, and financial outcomes based on your horoscope.",
+      "details": [
+        "Analysis of career growth and setbacks",
+        "Identifying the most suitable profession",
+        "Insights into business opportunities",
+        "Remedies to overcome career obstacles"
+      ],
+      "bestFor": "Career direction and financial stability",
       "prefill": "I need career guidance"
+    },
+    {
+      "problemKey": "marriage",
+      "title": "Marriage & Relationship Consultation",
+      "problem": "Facing delays in marriage or issues in married life?",
+      "solution": "Solutions for compatibility issues, marital problems, and delays in marriage.",
+      "details": [
+        "Marriage compatibility analysis",
+        "Identification of planetary factors affecting marriage",
+        "Understanding reasons for delays",
+        "Guidance to improve relationship harmony"
+      ],
+      "bestFor": "Marriage matching and relationship issues",
+      "prefill": "I need help with marriage issues"
+    },
+    {
+      "problemKey": "education",
+      "title": "Education & Children Guidance",
+      "problem": "Concerned about studies or your child’s future?",
+      "solution": "Guidance for choosing the right education path and understanding child-related concerns.",
+      "details": [
+        "Selecting the right field of study",
+        "Understanding child’s strengths and future potential",
+        "Improving focus and academic performance",
+        "Supportive remedies for better learning"
+      ],
+      "bestFor": "Students and parents seeking clarity",
+      "prefill": "I need guidance for education or children"
+    },
+    {
+      "problemKey": "muhurtham",
+      "title": "Auspicious Timing (Muhurtham)",
+      "problem": "Unsure about the right time to begin important events?",
+      "solution": "Selection of the most suitable timing for important life events based on planetary alignment.",
+      "details": [
+        "Marriage timing selection",
+        "Housewarming (Grihapravesham)",
+        "Starting new ventures",
+        "Timing based on favorable planetary positions"
+      ],
+      "bestFor": "Important life events and ceremonies",
+      "prefill": "I need to know an auspicious time"
+    },
+    {
+      "problemKey": "vasthu",
+      "title": "Vastu Consultation",
+      "problem": "Facing imbalance or lack of peace in your home or workplace?",
+      "solution": "Guidance to ensure harmony, prosperity, and balance in living and working spaces.",
+      "details": [
+        "Guidance during construction planning",
+        "Ensuring prosperity and peace in spaces",
+        "Identifying existing structural or energy issues",
+        "Simple and practical correction methods"
+      ],
+      "bestFor": "Homes and businesses seeking balance and stability",
+      "prefill": "I need vastu consultation"
     }
   ],
   "testimonials": [

@@ -26,10 +26,6 @@ export default function AboutPreview({ data }: any) {
         {/* Right Content */}
         <div className="space-y-6">
           <div>
-            <p className="text-[#c2410c] font-semibold tracking-[0.2em] uppercase text-sm mb-3">
-              About The Jyothishan
-            </p>
-
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1E1B16] leading-tight">
               A Legacy of Trust & Guidance
             </h2>
