@@ -11,7 +11,6 @@ import CTASection from "../components/sections/CTASection";
 import StickyCTA from "../components/sections/StickyCTA";
 
 export default function Home() {
-  console.log(data);
   return <main>
     <Hero data={{ ...data.hero, facebookUrl: data.site.facebook }} phone={data.site.whatsapp} theme={data.theme} />
     {/* <ProblemGrid problems={data.problems} phone={data.site.whatsapp} theme={data.theme} /> */}

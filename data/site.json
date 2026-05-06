@@ -101,7 +101,7 @@
       "experience": "20+ വർഷത്തെ പ്രൊഫഷണൽ മികവ്",
       "clients": "അഘോര ചൈതന്യത്തിൽ അധിഷ്ഠിതമായ ആത്മീയ മാർഗ്ഗനിർദ്ദേശം"
     },
-    "image": "/images/profile-pic.webp"
+    "image": "/images/profile-pic.jpg"
   },
   "services": [
     {
@@ -213,7 +213,7 @@
     },
     {
       "title": "Share Birth Details",
-      "description": "Provide your Janma Nakshatra and birth time."
+      "description": "Provide your birth details and time"
     },
     {
       "title": "Divine Prashna",
