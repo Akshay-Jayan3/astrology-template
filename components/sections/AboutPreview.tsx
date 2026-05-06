@@ -4,7 +4,7 @@ import { Award, Users } from "lucide-react";
 
 export default function AboutPreview({ data }: any) {
   return (
-    <section className="relative px-6 sm:px-12 lg:px-24 py-24 bg-[#FAF7F2] overflow-hidden">
+    <section className="relative px-6 sm:px-12 lg:px-24 py-10 md:py-16 bg-[#FAF7F2] overflow-hidden">
       {/* Soft Background Accent */}
       <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-gradient-to-bl from-[#FFF4D6] to-transparent rounded-full blur-3xl opacity-60 -z-10" />
 

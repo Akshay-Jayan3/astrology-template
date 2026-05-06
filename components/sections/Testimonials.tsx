@@ -1,6 +1,6 @@
 export default function Testimonials({ items }: any) {
   return (
-    <section className="px-6 sm:px-12 lg:px-24 py-20 bg-[#F9F6F1]">
+    <section className="px-6 sm:px-12 lg:px-24 py-10 md:py-16 bg-[#F9F6F1]">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}

@@ -80,25 +80,9 @@ export default function Navbar({ data }: any) {
                     : "opacity-0 pointer-events-none"
                     }`}
             >
-                {/* Background */}
-                <div className="absolute inset-0 bg-[#F9F6F1]">
-
-                    {/* Lamps background */}
-                    <div className="absolute inset-0 opacity-[0.08]">
-                        <Image
-                            src="/images/lamps-bg.webp"
-                            alt="temple lamps"
-                            fill
-                            className="object-cover blur-sm scale-105"
-                        />
-                    </div>
-
-                    {/* Soft overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-orange-50/40 to-transparent" />
-                </div>
 
                 {/* Content */}
-                <div className="relative h-full flex flex-col justify-center items-center px-6 text-center space-y-10">
+                <div className="relative h-full flex flex-col justify-center items-center px-6 text-center space-y-10 bg-[#F9F6F1]">
 
                     {/* Links */}
                     {data.navbar?.links?.map((link: any) => (

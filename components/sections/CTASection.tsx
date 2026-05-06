@@ -3,7 +3,7 @@ import CTA from "../ui/CTA";
 
 export default function CTASection({ phone, theme }: any) {
   return (
-    <section className="relative px-6 sm:px-12 py-28 overflow-hidden">
+    <section className="relative px-6 sm:px-12 py-10 md:py-16 overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/solar-system.webp"

@@ -8,7 +8,7 @@ import {
 
 export default function TrustStrip({ data }: any) {
   return (
-    <section className="bg-[#FAF7F2] py-10 px-6 sm:px-12 lg:px-24">
+    <section className="bg-[#FAF7F2] py-10 md:py-16 px-6 sm:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {data.map((item: any, index: number) => (

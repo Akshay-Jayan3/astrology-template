@@ -1,6 +1,6 @@
 export default function HowItWorks({ steps }: any) {
   return (
-    <section className="px-6 sm:px-12 lg:px-24 py-20 bg-white relative">
+    <section className="px-6 sm:px-12 lg:px-24 py-10 md:py-16 bg-white relative">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-20 max-w-2xl mx-auto">

@@ -3,7 +3,7 @@ import { Heart, Briefcase, Coins, Leaf, Sparkles } from "lucide-react";
 
 export default function ProblemGrid({ problems, phone, theme }: any) {
   return (
-    <section className="px-6 sm:px-12 lg:px-24 py-20 bg-white">
+    <section className="px-6 sm:px-12 lg:px-24 py-10 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
