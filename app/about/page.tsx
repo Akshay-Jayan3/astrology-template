@@ -6,6 +6,7 @@ import Image from "next/image";
 import CTA from "../../components/ui/CTA";
 import StickyCTA from "../../components/sections/StickyCTA";
 import TrustStrip from "../../components/sections/TrustStrip";
+import PageHeader from "../../components/ui/Header";
 
 const image = data.about.image; // common image for both languages
 
@@ -17,26 +18,13 @@ export default function AboutPage() {
   return (
     <main>
       {/* Premium Hero Section */}
-      <section className="relative py-24 px-6 sm:px-12 lg:px-24 overflow-hidden bg-[#FAF7F2]">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-[#FFF3D4] to-transparent rounded-full blur-3xl opacity-70 -z-10" />
-
-        <div className="max-w-5xl mx-auto text-center space-y-8">
-          <p className="text-[#c2410c] font-semibold tracking-[0.25em] uppercase text-sm">
-            About The Jyothishan
-          </p>
-
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#1E1B16] leading-tight">
-            A Sacred Legacy of
-            <span className="block text-[#c2410c]">
-              Trust & Divine Guidance
-            </span>
-          </h1>
-
-          <p className="text-lg md:text-xl text-[#4A443D] max-w-3xl mx-auto leading-relaxed">
-            {content.short}
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        eyebrow="About Us"
+        title="A Sacred Legacy of Trust & Divine Guidance"
+        description={content.short}
+        backHref="/"
+        backLabel="Back to Home"
+      />
 
       {/* Main Content */}
       <section className="px-6 sm:px-12 lg:px-24 py-20 bg-white">

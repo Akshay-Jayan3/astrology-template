@@ -29,11 +29,11 @@ export default function Footer({ data }: any) {
                   </Link>
                 </li>
               ))}
-              <li>
+              {/* <li>
                 <Link href="/blog" className="hover:text-orange-400 hover:underline underline-offset-4 transition-colors">
                   Blog Insights
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -78,10 +78,6 @@ export default function Footer({ data }: any) {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500">
           <p>© {new Date().getFullYear()} {data.site.name}. All rights reserved.</p>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
-            <span className="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
-          </div>
         </div>
 
       </div>

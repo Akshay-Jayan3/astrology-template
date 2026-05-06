@@ -2,6 +2,7 @@ import data from "../../data/site.json";
 import CTA from "../../components/ui/CTA";
 import StickyCTA from "../../components/sections/StickyCTA";
 import CTASection from "../../components/sections/CTASection";
+import PageHeader from "../../components/ui/Header";
 
 export const metadata = {
   title: `Our Services | ${data.site.name}`,
@@ -10,16 +11,14 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#F9F6F1] pb-24">
-      {/* Header */}
-      <section className="py-16 px-6 sm:px-12 lg:px-24">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">Sacred Astrological Offerings & Remedies</h1>
-          <p className="text-xl text-gray-600">
-            Receive trusted astrological guidance and remedies for life’s challenges.
-          </p>
-        </div>
-      </section>
+    <main className="min-h-screen pb-24">
+      <PageHeader
+        eyebrow="Our Services"
+        title="Sacred Astrological Offerings & Remedies"
+        description="Receive trusted astrological guidance and remedies for life’s challenges."
+        backHref="/"
+        backLabel="Back to Home"
+      />
 
       {/* Services List */}
       <section className="py-16 px-6 sm:px-12 lg:px-24">

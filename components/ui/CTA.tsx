@@ -28,7 +28,7 @@ export default function CTA({ type, phone, url, message, label, theme }: Props) 
         style={baseStyle}
         target="_blank"
         rel="noopener noreferrer"
-        className="px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 hover:opacity-90 inline-flex items-center gap-2"
+        className="px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 hover:opacity-90 inline-flex items-center gap-2 whitespace-nowrap"
       >
         {label || 'Chat on WhatsApp'}
       </a>

@@ -19,17 +19,17 @@ export default function ServicesPreview({ services }: any) {
 
         {/* Grid / Carousel */}
         <div
-          className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory pb-8 md:pb-0 -mx-6 px-6 sm:-mx-12 sm:px-12 md:mx-0 md:px-0 md:overflow-visible [&::-webkit-scrollbar]:hidden"
+          className="flex items-stretch md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 overflow-x-auto snap-x snap-mandatory pb-8 md:pb-0 -mx-6 px-6 sm:-mx-12 sm:px-12 md:mx-0 md:px-0 md:overflow-visible [&::-webkit-scrollbar]:hidden "
           style={{ scrollbarWidth: "none" }}
         >
           {previewServices.map((s: any) => (
             <Link
               key={s.title}
               href={`/services#${s.problemKey}`} // 🔥 anchor navigation
-              className="flex-none w-[85vw] sm:w-[350px] md:w-auto snap-center"
+              className="flex-none w-[85vw] sm:w-[350px] md:w-auto snap-center h-full"
             >
               <div
-                className="bg-white rounded-3xl p-6 lg:p-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-orange-100/50 flex flex-col border border-orange-900/5 group relative overflow-hidden cursor-pointer"
+                className="bg-white h-full rounded-3xl p-6 lg:p-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-orange-100/50 flex flex-col border border-orange-900/5 group relative overflow-hidden cursor-pointer"
               >
                 {/* Decorative gradient line */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
