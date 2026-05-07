@@ -26,7 +26,7 @@ export default function ServicesPreview({ services }: any) {
             <Link
               key={s.title}
               href={`/services#${s.problemKey}`} // 🔥 anchor navigation
-              className="flex-none w-[85vw] sm:w-[350px] md:w-auto snap-center h-full"
+              className="flex-none w-[85vw] sm:w-[350px] md:w-auto snap-center max-h-full"
             >
               <div
                 className="bg-white h-full rounded-3xl p-6 lg:p-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-orange-100/50 flex flex-col border border-orange-900/5 group relative overflow-hidden cursor-pointer"
@@ -61,7 +61,7 @@ export default function ServicesPreview({ services }: any) {
         </div>
 
         {/* View All CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-6">
           <Link
             href="/services"
             className="inline-flex items-center gap-2 text-orange-700 font-semibold hover:text-orange-800 transition-colors"

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Award, Users } from "lucide-react";
+import { Award, Users, StarIcon } from "lucide-react";
 
 export default function AboutPreview({ data }: any) {
   return (
@@ -27,7 +27,7 @@ export default function AboutPreview({ data }: any) {
         <div className="space-y-6">
           <div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1E1B16] leading-tight">
-              A Legacy of Trust & Guidance
+              A Sacred Legacy of Astrology & Guidance
             </h2>
 
             <p className="mt-4 text-2xl font-serif text-[#3B2E1F]">
@@ -55,6 +55,13 @@ export default function AboutPreview({ data }: any) {
               <Users className="w-5 h-5 text-[#c2410c]" />
               <span className="font-medium text-[#1E1B16]">
                 {data.en.clients}
+              </span>
+            </div>
+            <div className="flex items-center gap-3 px-5 py-3 rounded-2xl bg-white border border-[#F1E3BF] shadow-sm">
+              <StarIcon className="w-5 h-5 text-[#c2410c]" />
+
+              <span className="font-medium text-[#1E1B16]">
+                {data.en.magazine}
               </span>
             </div>
           </div>
