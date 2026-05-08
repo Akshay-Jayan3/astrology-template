@@ -157,7 +157,7 @@ export default function Navbar({ data }: any) {
                         {data.site.facebook && (
                             <CTA
                                 type="facebook"
-                                phone={data.site.facebook}
+                                url={data.site.facebook}
                                 label="Connect on Facebook"
                                 theme={data.theme}
                             />
