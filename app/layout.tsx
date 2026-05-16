@@ -3,13 +3,14 @@ import "./globals.css";
 import data from "../data/site.json";
 import Navbar from "../components/layout/navbar";
 import Footer from "../components/layout/Footer";
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
-export const metadata = { 
-  title: `${data.site.name} | Astrology Services`, 
-  description: "Consult trusted astrologer for guidance on marriage, career, and life." 
+export const metadata = {
+  title: `${data.site.name} | Astrology Services`,
+  description: "Consult trusted astrologer for guidance on marriage, career, and life."
 };
 
 export default function RootLayout({ children }: any) {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: any) {
         <div className="flex-grow">
           {children}
         </div>
+        <Analytics />
         <Footer data={data} />
       </body>
     </html>

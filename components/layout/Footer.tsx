@@ -76,7 +76,7 @@ export default function Footer({ data }: any) {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-center text-xs text-gray-500">
           <p>© {new Date().getFullYear()} {data.site.name}. All rights reserved.</p>
         </div>
 
